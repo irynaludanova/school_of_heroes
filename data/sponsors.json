@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Олександр Момот",
+    "position": "Chief Executive Officer в Peanut.trade",
+    "image": "/images/sponsors/9.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Роман Прокоф'єв",
+    "position": "Co-Founder в Jooble",
+    "image": "/images/sponsors/6.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Сергій Бойко",
+    "position": "Створюємо Еко Будинки з 🌿 конопель, засновник в Hemphouse.com.ua",
+    "image": "/images/sponsors/10.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Дмитро Лагода",
+    "position": "Product Designer в Arrival, Lead Designer в Nodio",
+    "image": "/images/sponsors/1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Denys Kotseba",
+    "position": "Співзасновник в Інститут \"Шімчон\"",
+    "image": "/images/sponsors/3.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Stanislav Melnyk",
+    "position": "Підприємець. Founder в MimiTech, інтеграція технологій у виробництво",
+    "image": "/images/sponsors/2.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Lidia Alagirova",
+    "position": "Головний спеціаліст в Укрзалізниця - Ukrzaliznytsia",
+    "image": "/images/sponsors/11.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Сергій Коваль",
+    "position": "Chief Executive Officer (CEO) & Founder в Kosmotech",
+    "image": "/images/sponsors/14.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Volodymyr Khomenko",
+    "position": "Старший юрист, адвокат в Gramatskiy&Partners - Грамацький і Партнери",
+    "image": "/images/sponsors/13.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Віктор Гуленко",
+    "position": "Директор рекламно-виробничої компанії ABC-solution, розробка і монтаж конструкцій",
+    "image": "/images/sponsors/8.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Олександр Мазурок",
+    "position": "Co-Founder and COO в БетонЕнерго",
+    "image": "/images/sponsors/4.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Сергій Рудь",
+    "position": "Директор з персоналу та організаційного розвитку, член правління в компанії Winner, продаж авто, нерухомість, будівництво",
+    "image": "/images/sponsors/5.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Олександр Гончарук",
+    "position": "Підприємець, засновник в A-finance, автолізинг. Психолог, коуч, учасник в CEO Club Ukraine",
+    "image": "/images/sponsors/12.jpg"
+  }
+]

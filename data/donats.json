@@ -1,0 +1,24 @@
+{
+  "buttons": [
+    {
+      "id": "1",
+      "text": "Оферта",
+      "href": "https://docs.google.com/document/d/1XPTdh7uMO5V8mXfvzFLLuX18ohtCK2xheP680lWVFNQ/edit?tab=t.0"
+    },
+    {
+      "id": "2",
+      "text": "Політика Конфіденційності",
+      "href": "https://docs.google.com/document/d/1XPTdh7uMO5V8mXfvzFLLuX18ohtCK2xheP680lWVFNQ/edit?tab=t.0"
+    },
+    {
+      "id": "3",
+      "text": "Витяг",
+      "href": "https://drive.google.com/file/d/1Bap1AUvolKkCwJwsdYgwES65Ytliz2jw/view"
+    },
+    {
+      "id": "4",
+      "text": "Статут",
+      "href": "https://drive.google.com/file/d/1pxgfdGpldvUJODkYXb7F2VFgUlfPk_3s/view"
+    }
+  ]
+}

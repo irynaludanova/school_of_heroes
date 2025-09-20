@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Сергій Гнатюк",
+    "position": "Співзасновник в Pandora Studio, фото студія",
+    "initials": "СГ",
+    "image": "/images/speakers/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Олексій Греков",
+    "position": "Директор в приватна школа \"Афіни\"",
+    "initials": "ОГ",
+    "image": "/images/speakers/17.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Roman Prokofiev",
+    "position": "Co-Founder в Jooble",
+    "initials": "РП",
+    "image": "/images/speakers/6.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Anton Posunko",
+    "position": "Co-Founder в Євросем, аграрна сфера",
+    "initials": "АП",
+    "image": "/images/speakers/13.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Дима Борисов",
+    "position": "Owner and Founder в Сім'я ресторанів Діми Борисова",
+    "initials": "ДБ",
+    "image": "/images/speakers/5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Маргарита Сичкарь",
+    "position": "Книжковий продюсер, власниця Book Hub Віч/на/Віч",
+    "initials": "МС",
+    "image": "/images/speakers/14.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Peter Chernyshov",
+    "position": "Екс-директор Київстар",
+    "initials": "ПЧ",
+    "image": "/images/speakers/3.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Andriy Fedoriv",
+    "position": "Маркетолог та інвестор, Founder в Fedoriv Agency",
+    "initials": "АФ",
+    "image": "/images/speakers/11.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Artem Zabolotny",
+    "position": "Founder в Viking Workshop, ювелірні вироби в стилі вікінгів",
+    "initials": "АЗ",
+    "image": "/images/speakers/15.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Настя Пуценко",
+    "position": "Chief marketing officer в FoodEx, 💛 SMM",
+    "initials": "НП",
+    "image": "/images/speakers/4.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Олександр Нєдов",
+    "position": "Засновник кафе \"Отже Кава\"",
+    "initials": "ОН",
+    "image": "/images/speakers/9.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Анна Литвинчук",
+    "position": "Психолог, профайлер, поліграфолог",
+    "initials": "АЛ",
+    "image": "/images/speakers/8.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Олександр Момот",
+    "position": "Криптовалюта, Chief Executive Officer в Peanut.trade",
+    "initials": "ОМ",
+    "image": "/images/speakers/10.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Сергій Бойко",
+    "position": "Створюємо Еко Будинки з 🌿 конопель",
+    "initials": "СБ",
+    "image": "/images/speakers/7.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Dima Lagoda",
+    "position": "Product Designer в Arrival",
+    "initials": "ДЛ",
+    "image": "/images/speakers/12.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Zhenya Mykhailenko",
+    "position": "Chef de cuisine в Ramen vs Marketing",
+    "initials": "ЗМ",
+    "image": "/images/speakers/16.jpg"
+  }
+]

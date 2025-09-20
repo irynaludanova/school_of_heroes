@@ -1,0 +1,10 @@
+{
+  "navLinks": [
+    { "id": "nav1", "text": "Школа Героїв", "href": "/" },
+    { "id": "nav2", "text": "Спікери", "href": "/speakers" },
+    { "id": "nav3", "text": "Спонсори", "href": "/sponsors" },
+    { "id": "nav4", "text": "Вакансії", "href": "/vacancies" },
+    { "id": "nav5", "text": "Задонатити", "href": "/donats" },
+    { "id": "nav6", "text": "Звіт", "href": "/report" }
+  ]
+}
