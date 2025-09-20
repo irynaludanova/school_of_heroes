@@ -1,11 +1,8 @@
-import path from "path"
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   swcMinify: true,
   experimental: {
     optimizeCss: true,
-    outputFileTracingRoot: path.join(__dirname, "../../"),
   },
   compress: true,
   images: {
