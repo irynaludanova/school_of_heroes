@@ -58,6 +58,13 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <head>
+        <link
+          rel="preload"
+          href="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js"
+          as="script"
+        />
+
+        <link rel="preload" href="/images/main/main.jpg" as="image" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
