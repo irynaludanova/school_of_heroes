@@ -1,9 +1,9 @@
 import Image from "next/image"
+import { Suspense } from "react"
 import speakerContributions from "../data/contributors.json"
 import Button from "@/components/Button"
 import "./globals.css"
 import type { Metadata } from "next"
-import { Suspense } from "react"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://school-of-heroes.vercel.app"),
@@ -140,7 +140,7 @@ export default function Home() {
           За один рік 25 дітей відвідали 40 зустрічей. В результаті діти
           отримали 1,1 млн. гривень, 600+ спікерів, 10.000+ годин практики.
           Найбільший результат, коли учень отримав 10 тис дол на розробку
-          беспілотника, стажування і роботу інженера в IT-компанії
+          безпілотника, стажування і роботу інженера в IT-компанії
         </p>
       </section>
 
@@ -165,6 +165,7 @@ export default function Home() {
             href="https://docs.google.com/forms/d/e/1FAIpQLSfFWj2d26RSk-YsD6y-cZ5LLBPZFYwY-bUlivo6ZeYZ2M8GfQ/viewform"
             variant="solid"
             className="mt-8"
+            aria-label="Записатись на програму"
           >
             Записатись
           </Button>

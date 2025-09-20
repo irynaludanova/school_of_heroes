@@ -1,14 +1,17 @@
 
-import type { MetadataRoute } from "next";
+import { NextResponse } from "next/server";
 
-export default function robots(): MetadataRoute.Robots {
-  return {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-      },
-    ],
-    sitemap: "https://school-of-heroes.vercel.app/sitemap.xml",
-  };
+export async function GET() {
+  const robots = `
+User-agent: *
+Allow: /
+Disallow: /api/*
+Sitemap: https://school-of-heroes.vercel.app/sitemap.xml
+`;
+
+  return new NextResponse(robots, {
+    headers: {
+      "Content-Type": "text/plain",
+    },
+  });
 }

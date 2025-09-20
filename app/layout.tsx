@@ -64,7 +64,6 @@ export default function RootLayout({
           as="style"
         />
         <link rel="preload" href="/_next/static/css/app/page.css" as="style" />
-
         <style
           dangerouslySetInnerHTML={{
             __html: `
@@ -75,7 +74,6 @@ export default function RootLayout({
         `,
           }}
         />
-
         <link
           rel="preload"
           href="/fonts/Roboto-Regular.ttf"
@@ -108,7 +106,7 @@ export default function RootLayout({
         className="min-h-screen bg-white text-slate-900"
         suppressHydrationWarning={true}
       >
-        <Header />
+        <Header aria-label="Головне меню Школи Героїв" />
         <main className="mx-auto">{children}</main>
       </body>
     </html>

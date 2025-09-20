@@ -1,44 +1,70 @@
-import type { MetadataRoute } from "next"
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://school-of-heroes.vercel.app"
-  const lastModified = new Date()
-  return [
+import { NextResponse } from "next/server";
+
+export async function GET() {
+  const routes = [
     {
-      url: `${baseUrl}/`,
-      lastModified,
+      url: "https://school-of-heroes.vercel.app/",
+      lastModified: new Date().toISOString(),
       changeFrequency: "weekly",
-      priority: 1,
+      priority: 1.0,
     },
     {
-      url: `${baseUrl}/donate`,
-      lastModified,
+      url: "https://school-of-heroes.vercel.app/donate",
+      lastModified: new Date().toISOString(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/report`,
-      lastModified,
+      url: "https://school-of-heroes.vercel.app/report",
+      lastModified: "2025-08-31T00:00:00Z",
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/speakers`,
-      lastModified,
+      url: "https://school-of-heroes.vercel.app/speakers",
+      lastModified: new Date().toISOString(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/sponsors`,
-      lastModified,
+      url: "https://school-of-heroes.vercel.app/sponsors",
+      lastModified: new Date().toISOString(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://school-of-heroes.vercel.app/vacancies",
+      lastModified: new Date().toISOString(),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/vacancies`,
-      lastModified,
+      url: "https://school-of-heroes.vercel.app/404",
+      lastModified: new Date().toISOString(),
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.1,
     },
-  ]
+  ];
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  ${routes
+    .map(
+      (route) => `
+    <url>
+      <loc>${route.url}</loc>
+      <lastmod>${route.lastModified}</lastmod>
+      <changefreq>${route.changeFrequency}</changefreq>
+      <priority>${route.priority}</priority>
+    </url>`
+    )
+    .join("")}
+</urlset>`;
+
+  return new NextResponse(sitemap, {
+    headers: {
+      "Content-Type": "application/xml",
+    },
+  });
 }

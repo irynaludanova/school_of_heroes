@@ -52,6 +52,20 @@ const nextConfig = {
       },
     ]
   },
+  async redirects() {
+    return [
+      {
+        source: "/old-home",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/donations",
+        destination: "/donate",
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig

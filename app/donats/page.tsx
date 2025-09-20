@@ -68,6 +68,7 @@ export default function Donate() {
             <a
               href="https://t.me/AndriyPushkar"
               className="text-blue-600 hover:underline"
+              aria-label="Зв'язатися через Telegram"
             >
               @AndriyPushkar
             </a>
@@ -79,7 +80,12 @@ export default function Donate() {
 
       <section className="flex flex-col justify-center max-w-6xl gap-4 px-4 py-8 mx-auto mb-12 text-center sm:px-6 sm:py-12 sm:w-full md:w-1/3">
         {buttons.map((button) => (
-          <Button key={button.id} href={button.href} variant="outline">
+          <Button
+            key={button.id}
+            href={button.href}
+            variant="outline"
+            aria-label={button.text}
+          >
             {button.text}
           </Button>
         ))}
