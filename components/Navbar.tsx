@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { useState } from "react"
-import { navLinks } from "../data/nav.json"
+import navLinks from "../data/nav.json"
 import Button from "./Button"
 
 export function Navbar() {

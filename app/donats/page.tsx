@@ -1,9 +1,10 @@
 import "@/app/globals.css"
-import { buttons } from "../../data/donats.json"
+import buttons from "../../data/donats.json"
 import Button from "@/components/Button"
-import { Metadata } from "next"
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://school-of-heroes.vercel.app"),
   title: "Підтримати донатом - Школа Героїв",
   description:
     "Підтримайте Школу Героїв донатом. Карта та рахунок фонду для внесків.",
@@ -12,9 +13,16 @@ export const metadata: Metadata = {
     title: "Підтримати донатом - Школа Героїв",
     description: "Допоможіть розвитку дітей через донати.",
     images: ["/images/main/symbols.jpg"],
+    url: "/donate",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Підтримати донатом - Школа Героїв",
+    description: "Допоможіть розвитку дітей через донати.",
+    images: ["/images/main/symbols.jpg"],
   },
   alternates: {
-    canonical: "https://shkolaheroiiv.com.ua/donate",
+    canonical: "/donate",
   },
 }
 
@@ -24,7 +32,7 @@ export default function Donate() {
     "@type": "WebPage",
     name: "Підтримати донатом",
     description: "Сторінка для донатів Школі Героїв.",
-    url: "https://shkolaheroiiv.com.ua/donate",
+    url: "https://school-of-heroes.vercel.app/donate",
   }
 
   return (
@@ -33,9 +41,11 @@ export default function Donate() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
       />
-      <section className="max-w-6xl mx-auto px-6 text-center pt-[100px] sm:pt-[160px]">
-        <h1 className="mb-6 text-3xl font-bold">Підтримати донатом</h1>
-        <div className="space-y-4 text-lg leading-relaxed">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 text-center pt-[80px] sm:pt-[160px]">
+        <h1 className="mb-4 text-2xl font-bold sm:text-3xl">
+          Підтримати донатом
+        </h1>
+        <div className="space-y-4 text-base leading-relaxed sm:text-lg">
           <p>
             <strong>Карта благодійного фонду:</strong>
             <br />
@@ -49,9 +59,9 @@ export default function Donate() {
         </div>
       </section>
 
-      <section className="max-w-6xl px-6 py-12 mx-auto text-center">
-        <h2 className="mb-6 text-2xl font-bold">Контакти</h2>
-        <div className="space-y-2 text-lg leading-relaxed">
+      <section className="max-w-6xl px-4 py-8 mx-auto text-center sm:px-6 sm:py-12">
+        <h2 className="mb-4 text-xl font-bold sm:text-2xl">Контакти</h2>
+        <div className="space-y-2 text-base leading-relaxed sm:text-lg">
           <p>098-978-97-88</p>
           <p>
             Телеграм:{" "}
@@ -67,7 +77,7 @@ export default function Donate() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center max-w-6xl gap-4 px-6 py-12 mx-auto mb-12 text-center md:w-1/3 sm:w-full">
+      <section className="flex flex-col justify-center max-w-6xl gap-4 px-4 py-8 mx-auto mb-12 text-center sm:px-6 sm:py-12 sm:w-full md:w-1/3">
         {buttons.map((button) => (
           <Button key={button.id} href={button.href} variant="outline">
             {button.text}

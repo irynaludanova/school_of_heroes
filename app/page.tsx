@@ -1,20 +1,31 @@
 import Image from "next/image"
-import { speakerContributions } from "../data/contributors.json"
+import speakerContributions from "../data/contributors.json"
 import Button from "@/components/Button"
 import "./globals.css"
+import type { Metadata } from "next"
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL("https://school-of-heroes.vercel.app"),
   title: "Головна - Школа Героїв",
   description:
     "Школа Героїв - зустрічі дітей та спікерів для розвитку практики, наставників та фінансів.",
+  keywords: "школа героїв, освіта, спікери, діти, наставництво",
   openGraph: {
+    title: "Головна - Школа Героїв",
+    description:
+      "Беремо актовий зал школи і групу дітей. Запрошуємо спікерів для спілкування.",
+    images: ["/images/main/offer.jpg"],
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Головна - Школа Героїв",
     description:
       "Беремо актовий зал школи і групу дітей. Запрошуємо спікерів для спілкування.",
     images: ["/images/main/offer.jpg"],
   },
   alternates: {
-    canonical: "https://shkolaheroiiv.com.ua/",
+    canonical: "/",
   },
 }
 
@@ -25,7 +36,7 @@ export default function Home() {
     name: "Головна сторінка Школи Героїв",
     description:
       "Зустрічі дітей та спікерів для розвитку практики, наставників та фінансів.",
-    url: "https://shkolaheroiiv.com.ua/",
+    url: "https://school-of-heroes.vercel.app/",
   }
 
   return (
@@ -36,11 +47,11 @@ export default function Home() {
       />
       <section className="parallax-hero h-[500px] w-full relative" />
 
-      <section className="max-w-4xl mx-auto py-12 px-6 text-center pt-[120px]">
-        <h1 className="mb-6 text-3xl font-bold">
+      <section className="max-w-4xl mx-auto py-8 px-4 sm:py-12 sm:px-6 text-center pt-[80px] sm:pt-[120px]">
+        <h1 className="mb-4 text-2xl font-bold sm:text-3xl">
           Школа Героїв - зустрічі дітей та спікерів
         </h1>
-        <p className="text-lg leading-relaxed">
+        <p className="text-base leading-relaxed sm:text-lg">
           Беремо актовий зал школи і групу 20-50 дітей віком 14-17 років. І
           запрошуємо 10-20 спікерів. Спікери - це підприємці та фахівці з різних
           сфер. На початку діти зі сцени презентують, чим захоплюються. Кожен
@@ -52,8 +63,8 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="max-w-4xl px-6 py-10 mx-auto">
-        <h2 className="mb-6 text-2xl font-bold text-center">
+      <section className="max-w-4xl px-4 py-8 mx-auto sm:px-6 sm:py-10">
+        <h2 className="mb-4 text-xl font-bold text-center sm:text-2xl">
           Відео, як все відбувається
         </h2>
         <div className="aspect-video">
@@ -68,9 +79,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12 bg-gray-50">
-        <div className="max-w-6xl px-6 mx-auto text-center">
-          <h2 className="mb-8 text-2xl font-bold">
+      <section className="py-8 sm:py-12 bg-gray-50">
+        <div className="max-w-6xl px-4 mx-auto text-center sm:px-6">
+          <h2 className="mb-6 text-xl font-bold sm:text-2xl">
             Після кожної зустрічі спікери відмічають, чим можуть допомогти дітям
           </h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
@@ -86,7 +97,7 @@ export default function Home() {
                   height={80}
                   className="mx-auto mb-4"
                 />
-                <h3 className="mb-2 text-lg font-semibold">
+                <h3 className="mb-2 text-base font-semibold sm:text-lg">
                   {contribution.title}
                 </h3>
                 <p className="text-sm text-gray-600">
@@ -98,8 +109,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-4xl px-6 py-12 mx-auto">
-        <h2 className="mb-6 text-2xl font-bold text-center">
+      <section className="max-w-4xl px-4 py-8 mx-auto sm:px-6 sm:py-12">
+        <h2 className="mb-4 text-xl font-bold text-center sm:text-2xl">
           Кейс одного з підлітків
         </h2>
         <div className="aspect-video">
@@ -114,12 +125,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-4xl px-6 py-12 mx-auto text-center">
-        <h2 className="mb-6 text-2xl font-bold">
+      <section className="max-w-4xl px-4 py-8 mx-auto text-center sm:px-6 sm:py-12">
+        <h2 className="mb-4 text-xl font-bold sm:text-2xl">
           Головна ідея - дати дітям практику, наставників та фінанси для
           розвитку
         </h2>
-        <p className="text-lg leading-relaxed">
+        <p className="text-base leading-relaxed sm:text-lg">
           За один рік 25 дітей відвідали 40 зустрічей. В результаті діти
           отримали 1,1 млн. гривень, 600+ спікерів, 10.000+ годин практики.
           Найбільший результат, коли учень отримав 10 тис дол на розробку
@@ -127,20 +138,20 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="relative h-[400px] w-full">
+      <section className="relative h-[400px] sm:h-[600px] w-full">
         <Image
           src="/images/main/main.jpg"
           alt="Школа Героїв - головне зображення"
           fill
           priority
           className="object-cover"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 1280px"
         />
       </section>
 
-      <section id="contacts" className="py-12 mb-12 bg-gray-100">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="mb-4 text-2xl font-bold">Контакти</h2>
+      <section id="contacts" className="py-8 mb-12 bg-gray-100 sm:py-12">
+        <div className="max-w-4xl px-4 mx-auto text-center sm:px-6">
+          <h2 className="mb-4 text-xl font-bold sm:text-2xl">Контакти</h2>
           <p>Школа Героїв</p>
           <p>098-978-97-88</p>
           <Button

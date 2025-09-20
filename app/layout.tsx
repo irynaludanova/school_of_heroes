@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Header } from "@/components/Header"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://school-of-heroes.vercel.app"),
   title: {
     default: "Школа Героїв",
     template: "%s | Школа Героїв",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Зустрічі дітей та спікерів для розвитку практики, наставників та фінансів.",
     images: ["/images/main/offer.jpg"],
-    url: "https://shkolaheroiiv.com.ua",
+    url: "/",
     type: "website",
     locale: "uk_UA",
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     images: ["/images/main/offer.jpg"],
   },
   alternates: {
-    canonical: "https://shkolaheroiiv.com.ua",
+    canonical: "/",
   },
 }
 
@@ -40,7 +40,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     name: "Школа Героїв",
-    url: "https://shkolaheroiiv.com.ua",
+    url: "https://school-of-heroes.vercel.app",
     description:
       "Non-profit освітня організація для зустрічей дітей та спікерів в Україні.",
     address: {
@@ -67,10 +67,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-white text-slate-900">
         <Header />
-        <main className="mx-auto">
-          {children}
-          <SpeedInsights />
-        </main>
+        <main className="mx-auto">{children}</main>
       </body>
     </html>
   )

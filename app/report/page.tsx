@@ -1,8 +1,9 @@
 import Image from "next/image"
 import "@/app/globals.css"
-import { Metadata } from "next"
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://school-of-heroes.vercel.app"),
   title: "Звіт - Серпень 2025 - Школа Героїв",
   description:
     "Результати Школи Героїв за серпень 2025: команда, сайт, спонсори.",
@@ -11,9 +12,16 @@ export const metadata: Metadata = {
     title: "Звіт - Серпень 2025 - Школа Героїв",
     description: "Детальний звіт про досягнення за серпень 2025.",
     images: ["/images/main/author.jpg"],
+    url: "/report",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Звіт - Серпень 2025 - Школа Героїв",
+    description: "Детальний звіт про досягнення за серпень 2025.",
+    images: ["/images/main/author.jpg"],
   },
   alternates: {
-    canonical: "https://shkolaheroiiv.com.ua/report",
+    canonical: "/report",
   },
 }
 
@@ -32,7 +40,7 @@ export default function Report() {
       name: "Школа Героїв",
     },
     description: "Звіт про команду, сайт, спонсорів та плани.",
-    url: "https://shkolaheroiiv.com.ua/report",
+    url: "https://school-of-heroes.vercel.app/report",
   }
 
   return (
@@ -41,16 +49,14 @@ export default function Report() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 text-center pt-[100px] sm:pt-[160px]">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 text-center pt-[80px] sm:pt-[160px]">
         <h1 className="text-2xl font-bold sm:text-3xl">
           Серпень 2025 Результати
         </h1>
       </section>
 
-      <section className="max-w-6xl px-8 py-8 mx-auto text-center sm:px-6 sm:py-12">
-        <h2 className="mb-4 text-2xl font-bold sm:mb-6 sm:text-3xl">
-          Про команду
-        </h2>
+      <section className="max-w-6xl px-4 py-8 mx-auto text-center sm:px-6 sm:py-12">
+        <h2 className="mb-4 text-xl font-bold sm:text-2xl">Про команду</h2>
         <p className="text-base leading-relaxed sm:text-lg">
           В команді 60 нових учасників стажируються, і 50 олдів, хто залишився
           після півроку роботи. Новачки показують круті результати по пошуку
@@ -61,10 +67,8 @@ export default function Report() {
         </p>
       </section>
 
-      <section className="max-w-6xl px-8 py-8 mx-auto text-center sm:px-6 sm:py-12">
-        <h2 className="mb-4 text-2xl font-bold sm:mb-6 sm:text-3xl">
-          Про сайт
-        </h2>
+      <section className="max-w-6xl px-4 py-8 mx-auto text-center sm:px-6 sm:py-12">
+        <h2 className="mb-4 text-xl font-bold sm:text-2xl">Про сайт</h2>
         <p className="text-base leading-relaxed sm:text-lg">
           Буксуємо по сайту. Дизайн і бекенд все готово, але відстаємо фронтенд,
           андроїд і айос. Наші програмісти зараз загружені своєю основною
@@ -74,8 +78,8 @@ export default function Report() {
         </p>
       </section>
 
-      <section className="max-w-6xl px-8 py-8 mx-auto text-center sm:px-6 sm:py-12">
-        <h2 className="mb-4 text-2xl font-bold sm:mb-6 sm:text-3xl">
+      <section className="max-w-6xl px-4 py-8 mx-auto text-center sm:px-6 sm:py-12">
+        <h2 className="mb-4 text-xl font-bold sm:text-2xl">
           Знайшли спонсора 20.000 грн на місяць, Харків
         </h2>
         <p className="text-base leading-relaxed sm:text-lg">
@@ -87,8 +91,8 @@ export default function Report() {
         </p>
       </section>
 
-      <section className="max-w-6xl px-8 py-8 mx-auto text-center sm:px-6 sm:py-12">
-        <h2 className="mb-4 text-2xl font-bold sm:mb-6 sm:text-3xl">
+      <section className="max-w-6xl px-4 py-8 mx-auto text-center sm:px-6 sm:py-12">
+        <h2 className="mb-4 text-xl font-bold sm:text-2xl">
           Раз на тиждень кожен учасник команди звітує про результати
         </h2>
         <p className="text-base leading-relaxed sm:text-lg">
@@ -98,8 +102,8 @@ export default function Report() {
         </p>
       </section>
 
-      <section className="max-w-6xl px-8 py-8 mx-auto text-center sm:px-6 sm:py-12">
-        <h2 className="mb-4 text-2xl font-bold sm:mb-6 sm:text-3xl">
+      <section className="max-w-6xl px-4 py-8 mx-auto text-center sm:px-6 sm:py-12">
+        <h2 className="mb-4 text-xl font-bold sm:text-2xl">
           Починаю навчати дітей в школах
         </h2>
         <p className="text-base leading-relaxed sm:text-lg">
@@ -109,33 +113,33 @@ export default function Report() {
         </p>
       </section>
 
-      <section className="max-w-6xl px-8 py-8 mx-auto text-center sm:px-6 sm:py-12">
-        <div className="relative w-3/4 h-auto mx-auto">
+      <section className="max-w-6xl px-4 py-8 mx-auto text-center sm:px-6 sm:py-12">
+        <div className="relative h-[200px] sm:h-[400px] w-full">
           <Image
             src="/images/main/author.jpg"
             alt="Автор звіту Школа Героїв"
             width={1280}
             height={720}
-            sizes="(max-width: 1280px) 100vw, 1280px"
-            className="object-cover w-3/4 h-auto mx-auto"
+            sizes="(max-width: 768px) 100vw, 1280px"
+            className="object-cover w-full h-full"
           />
         </div>
       </section>
-      <section className="max-w-6xl px-8 py-2 mx-auto text-center sm:px-6 sm:py-4">
+      <section className="max-w-6xl px-4 py-2 mx-auto text-center sm:px-6 sm:py-4">
         <p className="text-base font-bold leading-relaxed sm:text-lg">
           Дякую, що довіряєте!
         </p>
       </section>
 
-      <section className="max-w-6xl px-8 py-8 mx-auto text-center sm:px-6 sm:py-12">
-        <div className="relative w-1/2 h-auto mx-auto mb-12">
+      <section className="max-w-6xl px-4 py-8 mx-auto text-center sm:px-6 sm:py-12">
+        <div className="relative h-[200px] sm:h-[400px] w-full">
           <Image
             src="/images/main/symbols.jpg"
             alt="Символи Школи Героїв"
             width={1280}
             height={720}
-            sizes="(max-width: 1280px) 100vw, 1280px"
-            className="object-cover w-1/2 h-auto mx-auto"
+            sizes="(max-width: 768px) 100vw, 1280px"
+            className="object-cover w-full h-full"
           />
         </div>
       </section>

@@ -1,8 +1,9 @@
 import "@/app/globals.css"
 import Button from "@/components/Button"
-import { Metadata } from "next"
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://school-of-heroes.vercel.app"),
   title: "Вакансії - Школа Героїв",
   description:
     "Вакансії в Школі Героїв. Запис на ознайомчий зум та співбесіду.",
@@ -11,9 +12,16 @@ export const metadata: Metadata = {
     title: "Вакансії - Школа Героїв",
     description: "Приєднайтеся до команди Школи Героїв.",
     images: ["/images/main/offer.jpg"],
+    url: "/vacancies",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Вакансії - Школа Героїв",
+    description: "Приєднайтеся до команди Школи Героїв.",
+    images: ["/images/main/offer.jpg"],
   },
   alternates: {
-    canonical: "https://shkolaheroiiv.com.ua/vacancies",
+    canonical: "/vacancies",
   },
 }
 
@@ -23,7 +31,7 @@ export default function Vacancies() {
     "@type": "WebPage",
     name: "Вакансії Школи Героїв",
     description: "Інформація про вакансії та процес запису.",
-    url: "https://shkolaheroiiv.com.ua/vacancies",
+    url: "https://school-of-heroes.vercel.app/vacancies",
   }
 
   return (
@@ -35,18 +43,18 @@ export default function Vacancies() {
       <section className="parallax-hero h-[500px] w-full relative">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="white-frame">
-            <h1 className="text-4xl md:text-6xl font-bold text-white [text-shadow:_0_2px_4px_rgba(0,0,0,0.3)]">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white [text-shadow:_0_2px_4px_rgba(0,0,0,0.3)]">
               Вакансії
             </h1>
           </div>
         </div>
       </section>
-      <section className="max-w-6xl mx-auto py-12 px-6 text-center pt-[120px]">
-        <h2 className="mb-6 text-3xl font-bold">Вакансії</h2>
-        <p className="mb-8 text-lg leading-relaxed">
+      <section className="max-w-6xl mx-auto py-8 px-4 sm:py-12 sm:px-6 text-center pt-[80px] sm:pt-[120px]">
+        <h2 className="mb-4 text-2xl font-bold sm:text-3xl">Вакансії</h2>
+        <p className="mb-8 text-base leading-relaxed sm:text-lg">
           Запис в команду проходить в 2 етапи
         </p>
-        <p className="text-lg leading-relaxed">
+        <p className="text-base leading-relaxed sm:text-lg">
           Перший етап - ознайомчий зум. На зумі відповідаємо на всі запитання,
           розповідаємо про функціонал в Школі Героїв, як працює проєкт.
           Пояснюємо умови, що немає зарплати, і все залежить від донатів
@@ -55,22 +63,24 @@ export default function Vacancies() {
         </p>
       </section>
 
-      <section className="max-w-6xl px-6 py-12 mx-auto text-center">
+      <section className="max-w-6xl px-4 py-8 mx-auto text-center sm:px-6 sm:py-12">
         <Button
           href="https://docs.google.com/forms/d/e/1FAIpQLScUqamvve_Z8tPh9yIPBoSiBHHfDZUarkozsFTxcQBjog3NfA/viewform"
           variant="outline"
+          aria-label="Запис на ознайомчий зум"
         >
           Запис на ознайомчий зум
         </Button>
       </section>
 
-      <section className="max-w-6xl px-6 py-12 mx-auto mb-8 text-center">
-        <h2 className="mb-6 text-2xl font-bold">
+      <section className="max-w-6xl px-4 py-8 mx-auto mb-8 text-center sm:px-6 sm:py-12">
+        <h2 className="mb-4 text-xl font-bold sm:text-2xl">
           Другий етап - пройти співбесіду
         </h2>
         <Button
           href="https://docs.google.com/forms/d/e/1FAIpQLScUqamvve_Z8tPh9yIPBoSiBHHfDZUarkozsFTxcQBjog3NfA/viewform"
           variant="outline"
+          aria-label="Запис на співбесіду"
         >
           Запис на співбесіду
         </Button>

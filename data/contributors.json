@@ -1,58 +1,56 @@
-{
-  "speakerContributions": [
-    {
-      "id": "contrib1",
-      "title": "Спікер",
-      "description": "Готовий відповідати на запитання онлайн або офлайн.",
-      "icon": "/images/icons/star.png"
-    },
-    {
-      "id": "contrib2",
-      "title": "Наставник",
-      "description": "Навчати по професії або бізнес-плану.",
-      "icon": "/images/icons/leaf.png"
-    },
-    {
-      "id": "contrib3",
-      "title": "Куратор",
-      "description": "Направляти по проекту або в житті, як старший друг.",
-      "icon": "/images/icons/flash.png"
-    },
-    {
-      "id": "contrib4",
-      "title": "Краудфандинг",
-      "description": "Підтримка грошима, коли буде готовий план проекту.",
-      "icon": "/images/icons/v_icon.png"
-    },
-    {
-      "id": "contrib5",
-      "title": "Спонсор",
-      "description": "Підтримка грошима або ресурсами вже зараз, без плану.",
-      "icon": "/images/icons/symbol.png"
-    },
-    {
-      "id": "contrib6",
-      "title": "Робота",
-      "description": "Запропонувати роботу підліткам у вільний від навчання час.",
-      "icon": "/images/icons/r_icon.jpg"
-    },
-    {
-      "id": "contrib7",
-      "title": "Стажування",
-      "description": "Стажування в компанії для отримання досвіду.",
-      "icon": "/images/icons/c_icon.jpg"
-    },
-    {
-      "id": "contrib8",
-      "title": "Екскурсія",
-      "description": "Екскурсія в компанію для групи дітей.",
-      "icon": "/images/icons/e_icon.png"
-    },
-    {
-      "id": "contrib9",
-      "title": "Майстер-клас",
-      "description": "Майстер-клас чи лекція по професії.",
-      "icon": "/images/icons/m_icon.png"
-    }
-  ]
-}
+[
+  {
+    "id": "contrib1",
+    "title": "Спікер",
+    "description": "Готовий відповідати на запитання онлайн або офлайн.",
+    "icon": "/images/icons/star.png"
+  },
+  {
+    "id": "contrib2",
+    "title": "Наставник",
+    "description": "Навчати по професії або бізнес-плану.",
+    "icon": "/images/icons/leaf.png"
+  },
+  {
+    "id": "contrib3",
+    "title": "Куратор",
+    "description": "Направляти по проекту або в житті, як старший друг.",
+    "icon": "/images/icons/flash.png"
+  },
+  {
+    "id": "contrib4",
+    "title": "Краудфандинг",
+    "description": "Підтримка грошима, коли буде готовий план проекту.",
+    "icon": "/images/icons/v_icon.png"
+  },
+  {
+    "id": "contrib5",
+    "title": "Спонсор",
+    "description": "Підтримка грошима або ресурсами вже зараз, без плану.",
+    "icon": "/images/icons/symbol.png"
+  },
+  {
+    "id": "contrib6",
+    "title": "Робота",
+    "description": "Запропонувати роботу підліткам у вільний від навчання час.",
+    "icon": "/images/icons/r_icon.jpg"
+  },
+  {
+    "id": "contrib7",
+    "title": "Стажування",
+    "description": "Стажування в компанії для отримання досвіду.",
+    "icon": "/images/icons/c_icon.jpg"
+  },
+  {
+    "id": "contrib8",
+    "title": "Екскурсія",
+    "description": "Екскурсія в компанію для групи дітей.",
+    "icon": "/images/icons/e_icon.png"
+  },
+  {
+    "id": "contrib9",
+    "title": "Майстер-клас",
+    "description": "Майстер-клас чи лекція по професії.",
+    "icon": "/images/icons/m_icon.png"
+  }
+]
