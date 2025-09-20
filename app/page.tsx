@@ -3,6 +3,7 @@ import speakerContributions from "../data/contributors.json"
 import Button from "@/components/Button"
 import "./globals.css"
 import type { Metadata } from "next"
+import { Suspense } from "react"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://school-of-heroes.vercel.app"),
@@ -45,7 +46,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
       />
-      <section className="parallax-hero h-[500px] w-full relative" />
+      <section className="parallax-hero h-[300px] sm:h-[500px] w-full relative" />
 
       <section className="max-w-4xl mx-auto py-8 px-4 sm:py-12 sm:px-6 text-center pt-[80px] sm:pt-[120px]">
         <h1 className="mb-4 text-2xl font-bold sm:text-3xl">
@@ -68,14 +69,16 @@ export default function Home() {
           Відео, як все відбувається
         </h2>
         <div className="aspect-video">
-          <iframe
-            className="w-full h-full rounded-lg shadow-lg"
-            src="https://drive.google.com/file/d/1b-XoOPiOd6KZRMjyDiBCxdyKcnaO8x9t/preview"
-            title="Відео о Школі Героїв"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            loading="lazy"
-            allowFullScreen
-          ></iframe>
+          <Suspense fallback={<div>Завантаження відео...</div>}>
+            <iframe
+              className="w-full h-full rounded-lg shadow-lg"
+              src="https://drive.google.com/file/d/1b-XoOPiOd6KZRMjyDiBCxdyKcnaO8x9t/preview"
+              title="Відео о Школі Героїв"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              loading="lazy"
+              allowFullScreen
+            ></iframe>
+          </Suspense>
         </div>
       </section>
 
@@ -96,6 +99,7 @@ export default function Home() {
                   width={80}
                   height={80}
                   className="mx-auto mb-4"
+                  quality={75}
                 />
                 <h3 className="mb-2 text-base font-semibold sm:text-lg">
                   {contribution.title}
@@ -114,14 +118,16 @@ export default function Home() {
           Кейс одного з підлітків
         </h2>
         <div className="aspect-video">
-          <iframe
-            className="w-full h-full rounded-lg shadow-lg"
-            src="https://drive.google.com/file/d/1b-XoOPiOd6KZRMjyDiBCxdyKcnaO8x9t/preview"
-            title="Кейс підлітка"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            loading="lazy"
-            allowFullScreen
-          ></iframe>
+          <Suspense fallback={<div>Завантаження відео...</div>}>
+            <iframe
+              className="w-full h-full rounded-lg shadow-lg"
+              src="https://drive.google.com/file/d/1b-XoOPiOd6KZRMjyDiBCxdyKcnaO8x9t/preview"
+              title="Кейс підлітка"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              loading="lazy"
+              allowFullScreen
+            ></iframe>
+          </Suspense>
         </div>
       </section>
 
@@ -138,7 +144,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="relative h-[400px] sm:h-[600px] w-full">
+      <section className="relative h-[300px] sm:h-[400px] w-full">
         <Image
           src="/images/main/main.jpg"
           alt="Школа Героїв - головне зображення"
@@ -146,6 +152,7 @@ export default function Home() {
           priority
           className="object-cover"
           sizes="(max-width: 768px) 100vw, 1280px"
+          quality={75}
         />
       </section>
 

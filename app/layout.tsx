@@ -60,11 +60,43 @@ export default function RootLayout({
       <head>
         <link
           rel="preload"
-          href="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js"
-          as="script"
+          href="/_next/static/css/app/layout.css"
+          as="style"
+        />
+        <link rel="preload" href="/_next/static/css/app/page.css" as="style" />
+
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+          body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; color: #333333; background-color: #ffffff; line-height: 1.5; font-display: swap; }
+          h1 { font-size: 2.25rem; font-weight: 700; color: #202124; }
+          @media (min-width: 768px) { h1 { font-size: 3.5rem; } }
+          .parallax-hero { background-image: url("/images/main/offer.jpg"); background-size: cover; background-position: center; background-attachment: fixed; height: 100vh; position: relative; }
+        `,
+          }}
         />
 
-        <link rel="preload" href="/images/main/main.jpg" as="image" />
+        <link
+          rel="preload"
+          href="/fonts/Roboto-Regular.ttf"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Roboto-Medium.ttf"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Roboto-Bold.ttf"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -72,7 +104,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen bg-white text-slate-900">
+      <body
+        className="min-h-screen bg-white text-slate-900"
+        suppressHydrationWarning={true}
+      >
         <Header />
         <main className="mx-auto">{children}</main>
       </body>

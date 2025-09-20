@@ -1,12 +1,12 @@
-import Image from "next/image"
-import "@/app/globals.css"
-import type { Metadata } from "next"
+
+import Image from "next/image";
+import "@/app/globals.css";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://school-of-heroes.vercel.app"),
   title: "Звіт - Серпень 2025 - Школа Героїв",
-  description:
-    "Результати Школи Героїв за серпень 2025: команда, сайт, спонсори.",
+  description: "Результати Школи Героїв за серпень 2025: команда, сайт, спонсори.",
   keywords: "звіт, Школа Героїв, серпень 2025, результати",
   openGraph: {
     title: "Звіт - Серпень 2025 - Школа Героїв",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/report",
   },
-}
+};
 
 export default function Report() {
   const articleSchema = {
@@ -41,7 +41,7 @@ export default function Report() {
     },
     description: "Звіт про команду, сайт, спонсорів та плани.",
     url: "https://school-of-heroes.vercel.app/report",
-  }
+  };
 
   return (
     <div className="w-full mx-auto text-gray-900 bg-white sm:w-1/2">
@@ -56,7 +56,9 @@ export default function Report() {
       </section>
 
       <section className="max-w-6xl px-4 py-8 mx-auto text-center sm:px-6 sm:py-12">
-        <h2 className="mb-4 text-xl font-bold sm:text-2xl">Про команду</h2>
+        <h2 className="mb-4 text-xl font-bold sm:text-2xl">
+          Про команду
+        </h2>
         <p className="text-base leading-relaxed sm:text-lg">
           В команді 60 нових учасників стажируються, і 50 олдів, хто залишився
           після півроку роботи. Новачки показують круті результати по пошуку
@@ -68,7 +70,9 @@ export default function Report() {
       </section>
 
       <section className="max-w-6xl px-4 py-8 mx-auto text-center sm:px-6 sm:py-12">
-        <h2 className="mb-4 text-xl font-bold sm:text-2xl">Про сайт</h2>
+        <h2 className="mb-4 text-xl font-bold sm:text-2xl">
+          Про сайт
+        </h2>
         <p className="text-base leading-relaxed sm:text-lg">
           Буксуємо по сайту. Дизайн і бекенд все готово, але відстаємо фронтенд,
           андроїд і айос. Наші програмісти зараз загружені своєю основною
@@ -122,6 +126,7 @@ export default function Report() {
             height={720}
             sizes="(max-width: 768px) 100vw, 1280px"
             className="object-cover w-full h-full"
+            quality={75}
           />
         </div>
       </section>
@@ -140,9 +145,10 @@ export default function Report() {
             height={720}
             sizes="(max-width: 768px) 100vw, 1280px"
             className="object-cover w-full h-full"
+            quality={75}
           />
         </div>
       </section>
     </div>
-  )
+  );
 }

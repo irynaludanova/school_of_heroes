@@ -75,6 +75,7 @@ export default function Speakers() {
                 height={300}
                 sizes="(max-width: 768px) 100vw, 300px"
                 className="object-cover w-full h-auto mb-3 aspect-square"
+                quality={75}
               />
               <h3
                 className="mb-2 text-base font-semibold sm:text-lg"
@@ -104,6 +105,7 @@ export default function Speakers() {
         <Button
           href="https://docs.google.com/forms/d/e/1FAIpQLSc4lcJN86tP1QKRAZLSZBssvwN7nSiLE3iBTUo7_HhQ450cUA/viewform"
           variant="outline"
+          aria-label="Записатись в спікери"
         >
           Записатись в спікери
         </Button>

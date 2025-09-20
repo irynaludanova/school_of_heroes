@@ -74,6 +74,7 @@ export default function Sponsors() {
                 height={300}
                 sizes="(max-width: 768px) 100vw, 300px"
                 className="object-cover w-full h-auto mb-3 aspect-square"
+                quality={75}
               />
               <h3
                 className="mb-2 text-base font-semibold sm:text-lg"

@@ -40,7 +40,7 @@ export default function Vacancies() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
       />
-      <section className="parallax-hero h-[500px] w-full relative">
+      <section className="parallax-hero h-[300px] sm:h-[500px] w-full relative">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="white-frame">
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white [text-shadow:_0_2px_4px_rgba(0,0,0,0.3)]">
