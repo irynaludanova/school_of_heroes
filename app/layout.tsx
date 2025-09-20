@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Header } from "@/components/Header"
 
 export const metadata: Metadata = {
@@ -66,7 +67,10 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-white text-slate-900">
         <Header />
-        <main className="mx-auto">{children}</main>
+        <main className="mx-auto">
+          {children}
+          <SpeedInsights />
+        </main>
       </body>
     </html>
   )
